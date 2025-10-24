@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Menu-estilo.css">
     <title>Menú - Restaurante</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -26,110 +28,110 @@
         </div>
     </header>
 
-    <!-- Menu Section -->
+    <!-- Sección del Menú -->
     <section class="menu-section" id="menu">
         <h1>Menú</h1>
-        <div class="menu-container">
-            <div class="menu-filters">
-                <button class="menu-filter-btn" data-filter="todos">Todos</button>
-                <button class="menu-filter-btn" data-filter="almuerzo">Almuerzo</button>
-                <button class="menu-filter-btn" data-filter="desayunos">Desayunos</button>
-                <button class="menu-filter-btn" data-filter="sopas">Sopas</button>
-                <button class="menu-filter-btn" data-filter="picadas">Picadas</button>
-                <button class="menu-filter-btn" data-filter="carne">Carne</button>
-                <button class="menu-filter-btn" data-filter="bebidas">Bebidas</button>
+
+        <div class="menu-filters">
+            <button class="menu-filter-btn active" data-filter="todos">Todos</button>
+            <button class="menu-filter-btn" data-filter="almuerzo">Almuerzo</button>
+            <button class="menu-filter-btn" data-filter="desayuno">Desayuno</button>
+            <button class="menu-filter-btn" data-filter="sopas">Sopas</button>
+            <button class="menu-filter-btn" data-filter="picadas">Picadas</button>
+            <button class="menu-filter-btn" data-filter="carne">Carne</button>
+            <button class="menu-filter-btn" data-filter="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Carta 1 -->
+            <div class="menu-item" data-category="almuerzo">
+                <div class="menu-card">
+                    <div class="card-front">
+                        <img src="IMG/bandeja.jpg" alt="Bandeja Paisa">
+                    </div>
+                    <div class="card-back">
+                        <h3>Bandeja Paisa</h3>
+                        <p>Arroz, frijoles, carne molida, chicharrón, plátano, huevo y aguacate.</p>
+                        <span class="price">$25.000</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="menu-grid">
-                <!-- Almuerzo -->
-                <div class="menu-item" data-category="almuerzo">
-                    <div class="menu-item-text">almuerzo</div>
+
+            <!-- Carta 2 -->
+            <div class="menu-item" data-category="desayuno">
+                <div class="menu-card">
+                    <div class="card-front">
+                        <img src="IMG/calentado.jpg" alt="Calentado con Huevo">
+                    </div>
+                    <div class="card-back">
+                        <h3>Calentado con Huevo</h3>
+                        <p>Arroz con frijoles y huevo frito acompañado de arepa.</p>
+                        <span class="price">$12.000</span>
+                    </div>
                 </div>
-                <div class="menu-item" data-category="almuerzo">
-                    <div class="menu-item-text">almuerzo</div>
+            </div>
+
+            <!-- Carta 3 -->
+            <div class="menu-item" data-category="sopas">
+                <div class="menu-card">
+                    <div class="card-front">
+                        <img src="IMG/sancocho.jpg" alt="Sancocho de Gallina">
+                    </div>
+                    <div class="card-back">
+                        <h3>Sancocho de Gallina</h3>
+                        <p>Sopa tradicional con gallina, yuca, papa y plátano.</p>
+                        <span class="price">$18.000</span>
+                    </div>
                 </div>
-                <div class="menu-item" data-category="almuerzo">
-                    <div class="menu-item-text">almuerzo</div>
+            </div>
+
+            <!-- Carta 4 -->
+            <div class="menu-item" data-category="carne">
+                <div class="menu-card">
+                    <div class="card-front">
+                        <img src="IMG/jugo.jpg" alt="Costillas BBQ">
+                    </div>
+                    <div class="card-back">
+                        <h3>Costillas BBQ</h3>
+                        <p>costillas asadas o al horno con salsa barbacoa.</p>
+                        <span class="price">$15.000</span>
+                    </div>
                 </div>
-                <div class="menu-item" data-category="almuerzo">
-                    <div class="menu-item-text">almuerzo</div>
+            </div>
+
+            <!-- Carta 5 -->
+            <div class="menu-item" data-category="picadas">
+                <div class="menu-card">
+                    <div class="card-front">
+                        <img src="IMG/jugo.jpg" alt="Picada mixta">
+                    </div>
+                    <div class="card-back">
+                        <h3>Picada mixta</h3>
+                        <p>combinación de carnes (res, cerdo, pollo, chorizo, morcilla) con papa criolla,
+                            yuca frita, plátano maduro y guacamole.</p>
+                        <span class="price">$25.000</span>
+                    </div>
                 </div>
-                
-                <!-- Desayunos -->
-                <div class="menu-item" data-category="desayunos">
-                    <div class="menu-item-text">desayunos</div>
-                </div>
-                <div class="menu-item" data-category="desayunos">
-                    <div class="menu-item-text">desayunos</div>
-                </div>
-                <div class="menu-item" data-category="desayunos">
-                    <div class="menu-item-text">desayunos</div>
-                </div>
-                <div class="menu-item" data-category="desayunos">
-                    <div class="menu-item-text">desayunos</div>
-                </div>
-                
-                <!-- Sopas -->
-                <div class="menu-item" data-category="sopas">
-                    <div class="menu-item-text">sopas</div>
-                </div>
-                <div class="menu-item" data-category="sopas">
-                    <div class="menu-item-text">sopas</div>
-                </div>
-                <div class="menu-item" data-category="sopas">
-                    <div class="menu-item-text">sopas</div>
-                </div>
-                <div class="menu-item" data-category="sopas">
-                    <div class="menu-item-text">sopas</div>
-                </div>
-                
-                <!-- Picadas -->
-                <div class="menu-item" data-category="picadas">
-                    <div class="menu-item-text">picadas</div>
-                </div>
-                <div class="menu-item" data-category="picadas">
-                    <div class="menu-item-text">picadas</div>
-                </div>
-                <div class="menu-item" data-category="picadas">
-                    <div class="menu-item-text">picadas</div>
-                </div>
-                <div class="menu-item" data-category="picadas">
-                    <div class="menu-item-text">picadas</div>
-                </div>
-                
-                <!-- Carne -->
-                <div class="menu-item" data-category="carne">
-                    <div class="menu-item-text">carne</div>
-                </div>
-                <div class="menu-item" data-category="carne">
-                    <div class="menu-item-text">carne</div>
-                </div>
-                <div class="menu-item" data-category="carne">
-                    <div class="menu-item-text">carne</div>
-                </div>
-                <div class="menu-item" data-category="carne">
-                    <div class="menu-item-text">carne</div>
-                </div>
-                
-                <!-- Bebidas -->
-                <div class="menu-item" data-category="bebidas">
-                    <div class="menu-item-text">bebidas</div>
-                </div>
-                <div class="menu-item" data-category="bebidas">
-                    <div class="menu-item-text">bebidas</div>
-                </div>
-                <div class="menu-item" data-category="bebidas">
-                    <div class="menu-item-text">bebidas</div>
-                </div>
-                <div class="menu-item" data-category="bebidas">
-                    <div class="menu-item-text">bebidas</div>
+            </div>
+
+            <!-- Carta 6 -->
+            <div class="menu-item" data-category="bebidas">
+                <div class="menu-card">
+                    <div class="card-front">
+                        <img src="IMG/jugo.jpg" alt="Jugo Natural">
+                    </div>
+                    <div class="card-back">
+                        <h3>Jugo Natural</h3>
+                        <p>Jugos de frutas naturales: maracuyá, lulo, mora o guanábana.</p>
+                        <span class="price">$5.000</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba"></button>
-
     <script src="JS/Menu-script.js"></script>
 </body>
+
 </html>
