@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Menu-estilo.css">
     <title>Menú - Restaurante</title>
 </head>
-
 <body>
+    <div id="top"></div>
+    
     <!-- Header -->
     <header>
         <div class="header-content">
@@ -22,16 +22,17 @@
                     <li><a href="Menu.html">Menú</a></li>
                     <li><a href="Reserva.html">Reserva</a></li>
                     <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sección del Menú -->
-    <section class="menu-section" id="menu">
+    <!-- Menú Section -->
+    <section class="menu-section">
         <h1>Menú</h1>
 
+        <!-- Filtros -->
         <div class="menu-filters">
             <button class="menu-filter-btn active" data-filter="todos">Todos</button>
             <button class="menu-filter-btn" data-filter="almuerzo">Almuerzo</button>
@@ -42,87 +43,93 @@
             <button class="menu-filter-btn" data-filter="bebidas">Bebidas</button>
         </div>
 
+        <!-- Grid de Tarjetas -->
         <div class="menu-grid">
-            <!-- Carta 1 -->
-            <div class="menu-item" data-category="almuerzo">
-                <div class="menu-card">
+            <!-- Tarjeta 1 -->
+            <div class="menu-card" data-category="almuerzo">
+                <div class="card-inner">
                     <div class="card-front">
-                        <img src="IMG/bandeja.jpg" alt="Bandeja Paisa">
+                        <img src="IMG/bandeja-paisa.jpg" alt="Bandeja Paisa">
+                        <div class="card-title">Bandeja Paisa</div>
                     </div>
                     <div class="card-back">
                         <h3>Bandeja Paisa</h3>
-                        <p>Arroz, frijoles, carne molida, chicharrón, plátano, huevo y aguacate.</p>
+                        <p>Plato típico colombiano con frijoles, arroz, carne molida, chicharrón, huevo, aguacate y arepa.</p>
                         <span class="price">$25.000</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Carta 2 -->
-            <div class="menu-item" data-category="desayuno">
-                <div class="menu-card">
+            <!-- Tarjeta 2 -->
+            <div class="menu-card" data-category="desayuno">
+                <div class="card-inner">
                     <div class="card-front">
-                        <img src="IMG/calentado.jpg" alt="Calentado con Huevo">
+                        <img src="IMG/calentado-huevo.jpg" alt="Calentado con Huevo">
+                        <div class="card-title">Calentado con Huevo</div>
                     </div>
                     <div class="card-back">
                         <h3>Calentado con Huevo</h3>
-                        <p>Arroz con frijoles y huevo frito acompañado de arepa.</p>
+                        <p>Delicioso desayuno con arroz, frijoles, carne y huevo frito.</p>
                         <span class="price">$12.000</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Carta 3 -->
-            <div class="menu-item" data-category="sopas">
-                <div class="menu-card">
+            <!-- Tarjeta 3 -->
+            <div class="menu-card" data-category="almuerzo">
+                <div class="card-inner">
                     <div class="card-front">
-                        <img src="IMG/sancocho.jpg" alt="Sancocho de Gallina">
+                        <img src="IMG/sancocho-gallina.jpg" alt="Sancocho de Gallina">
+                        <div class="card-title">Sancocho de Gallina</div>
                     </div>
                     <div class="card-back">
                         <h3>Sancocho de Gallina</h3>
-                        <p>Sopa tradicional con gallina, yuca, papa y plátano.</p>
+                        <p>Sopa tradicional con gallina, papa, yuca, plátano y mazorca.</p>
                         <span class="price">$18.000</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Carta 4 -->
-            <div class="menu-item" data-category="carne">
-                <div class="menu-card">
+            <!-- Tarjeta 4 -->
+            <div class="menu-card" data-category="carne">
+                <div class="card-inner">
                     <div class="card-front">
-                        <img src="IMG/jugo.jpg" alt="Costillas BBQ">
+                        <img src="IMG/costillas-bbq.jpg" alt="Costillas BBQ">
+                        <div class="card-title">Costillas BBQ</div>
                     </div>
                     <div class="card-back">
                         <h3>Costillas BBQ</h3>
-                        <p>costillas asadas o al horno con salsa barbacoa.</p>
-                        <span class="price">$15.000</span>
+                        <p>Costillas de cerdo bañadas en salsa BBQ casera, acompañadas de papas.</p>
+                        <span class="price">$28.000</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Carta 5 -->
-            <div class="menu-item" data-category="picadas">
-                <div class="menu-card">
+            <!-- Tarjeta 5 -->
+            <div class="menu-card" data-category="picadas">
+                <div class="card-inner">
                     <div class="card-front">
-                        <img src="IMG/jugo.jpg" alt="Picada mixta">
+                        <img src="IMG/picada-mixta.jpg" alt="Picada Mixta">
+                        <div class="card-title">Picada Mixta</div>
                     </div>
                     <div class="card-back">
-                        <h3>Picada mixta</h3>
-                        <p>combinación de carnes (res, cerdo, pollo, chorizo, morcilla) con papa criolla,
-                            yuca frita, plátano maduro y guacamole.</p>
-                        <span class="price">$25.000</span>
+                        <h3>Picada Mixta</h3>
+                        <p>Variedad de carnes: pollo, cerdo, res, chorizo y morcilla con papas y plátano.</p>
+                        <span class="price">$35.000</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Carta 6 -->
-            <div class="menu-item" data-category="bebidas">
-                <div class="menu-card">
+            <!-- Tarjeta 6 -->
+            <div class="menu-card" data-category="bebidas">
+                <div class="card-inner">
                     <div class="card-front">
-                        <img src="IMG/jugo.jpg" alt="Jugo Natural">
+                        <img src="IMG/jugo-natural.jpg" alt="Jugo Natural">
+                        <div class="card-title">Jugo Natural</div>
                     </div>
                     <div class="card-back">
                         <h3>Jugo Natural</h3>
-                        <p>Jugos de frutas naturales: maracuyá, lulo, mora o guanábana.</p>
+                        <p>Jugo de frutas frescas de la región. Pregunta por los sabores disponibles.</p>
                         <span class="price">$5.000</span>
                     </div>
                 </div>
@@ -130,8 +137,9 @@
         </div>
     </section>
 
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba"></button>
+    <!-- Botón Scroll to Top -->
+    <a href="#top" class="scroll-to-top"></a>
+
     <script src="JS/Menu-script.js"></script>
 </body>
-
 </html>
