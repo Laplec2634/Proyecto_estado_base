@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reserva-estilo.css">
+    <title>Reserva - Restaurante</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-circle">Logo</div>
+                <span class="brand-name">Nombre</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Menu.html">Menú</a></li>
+                    <li><a href="Reserva.html">Reserva</a></li>
+                    <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reserva Section -->
+    <section class="reserva-section">
+        <h1>Reserva</h1>
+        <div class="reserva-container">
+            <form id="reservaForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha-entrada">FECHA ENTRADA</label>
+                        <input type="date" id="fecha-entrada" name="fecha-entrada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-salida">FECHA SALIDA</label>
+                        <input type="date" id="fecha-salida" name="fecha-salida" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                </div>
+                <button type="submit" class="btn-reserva">Buscar Reserva</button>
+                <div id="mensaje" class="mensaje"></div>
+            </form>
+        </div>
+    </section>
+
+    <script src="JS/Reserva-script.js"></script>
+</body>
+</html>

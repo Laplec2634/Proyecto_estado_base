@@ -60,29 +60,19 @@ header {
 /* Navegación */
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
-    align-items: center;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 15px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #f4a623;
-    background-color: rgba(244, 166, 35, 0.1);
-}
-
-nav a.active {
-    color: #6b46c1;
-    font-weight: bold;
 }
 
 /* ========== ABOUT SECTION ========== */
