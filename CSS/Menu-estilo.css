@@ -55,6 +55,13 @@ header {
   transform: scale(1.05);
 }
 
+.logo-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 .brand-name {
   font-size: 22px;
   font-weight: bold;

@@ -1,279 +1,353 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
 
-        /* Header */
-        header {
-            background-color: #c0c0c0;
-            padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+/* Header */
+header {
+    background-color: #c0c0c0;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-        .logo-circle {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #f4a623, #f7c54d);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #333;
-        }
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #f4a623, #f7c54d);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+}
 
-        .brand-name {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-        }
+.logo-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 50%;
+}
 
-        nav ul {
-            display: flex;
-            gap: 25px;
-            list-style: none;
-        }
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
 
-        nav a:hover {
-            color: #f4a623;
-        }
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(to bottom, #fff 0%, #f5f5dc 100%);
-            padding: 60px 20px;
-            text-align: center;
-        }
+nav a:hover {
+    color: #f4a623;
+}
 
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #fff 0%, #f5f5dc 100%);
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        .hero h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #333;
-        }
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-        .hero-image {
-            width: 100%;
-            max-width: 600px;
-            height: 300px;
-            background-color: #e0e0e0;
-            margin: 30px auto;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-        }
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-        /* Tabs Navigation */
-        .tabs {
-            background-color: #f5f5dc;
-            display: flex;
-            justify-content: center;
-            gap: 0;
-            padding: 0;
-            border-bottom: 2px solid #ddd;
-        }
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    background-color: #e0e0e0;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
 
-        .tab-button {
-            padding: 15px 40px;
-            background-color: #f5f5dc;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            transition: all 0.3s;
-            border-bottom: 3px solid transparent;
-        }
+.hero-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ajusta sin deformar */
+    border-radius: 10px;
+}
 
-        .tab-button:hover {
-            background-color: #ede5c8;
-        }
+/* Tabs Navigation */
+.tabs {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    border-bottom: 2px solid #ddd;
+}
 
-        .tab-button.active {
-            background-color: #ede5c8;
-            border-bottom-color: #f4a623;
-        }
+.tab-button {
+    padding: 15px 40px;
+    background-color: #f5f5dc;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+}
 
-        /* Sections */
-        .section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.tab-button:hover {
+    background-color: #ede5c8;
+}
 
-        .section-content {
-            background-color: #e0e0e0;
-            padding: 40px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-        }
+.tab-button.active {
+    background-color: #ede5c8;
+    border-bottom-color: #f4a623;
+}
 
-        .section h2 {
-            font-size: 28px;
-            text-align: center;
-            margin-bottom: 40px;
-            color: #333;
-        }
+/* Sections */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .items-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
-        }
+.section-content {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
 
-        .item-card {
-            text-align: center;
-        }
+.section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
 
-        .item-image {
-            width: 150px;
-            height: 150px;
-            background-color: #b0b0b0;
-            border-radius: 50%;
-            margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-size: 14px;
-        }
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
 
-        .item-name {
-            font-weight: bold;
-            color: #333;
-        }
+.item-card {
+    text-align: center;
+}
 
-        .section-description {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
+.item-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #b0b0b0;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* ✅ recorta la imagen dentro del círculo */
+}
 
-        /* CTA Banner */
-        .cta-banner {
-            background-color: #f5f5dc;
-            padding: 80px 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ✅ ahora sí funciona */
+    border-radius: 50%;
+    /* mantiene el círculo */
+}
 
-        .cta-banner h2 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 30px;
-        }
+.item-name {
+    font-weight: bold;
+    color: #333;
+}
 
-        /* Footer */
-        footer {
-            background-color: #2c2c2c;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-        }
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
 
-        footer p {
-            font-size: 14px;
-        }
+/* CTA Banner */
+.cta-banner {
+    background-color: #f5f5dc;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
 
-        /* Responsive */
-        /* Scroll to Top Button */
-        .scroll-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #f4a623, #f7c54d);
-            border: none;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            z-index: 1000;
-            text-decoration: none;
-        }
+.cta-banner h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
 
-        .scroll-to-top:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        }
+/* Footer */
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
 
-        .scroll-to-top::before {
-            content: '↑';
-            font-size: 24px;
-            color: #fff;
-            font-weight: bold;
-        }
+footer p {
+    font-size: 14px;
+}
 
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 20px;
-            }
+/* ========== RESPONSIVE DESIGN MEJORADO ========== */
 
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
 
-            .tabs {
-                flex-direction: column;
-            }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 
-            .items-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+    .hero {
+        padding: 40px 15px;
+    }
 
-            .hero h1 {
-                font-size: 24px;
-            }
+    .hero h1 {
+        font-size: 26px;
+    }
 
-            .scroll-to-top {
-                width: 45px;
-                height: 45px;
-                bottom: 20px;
-                right: 20px;
-            }
+    .hero-image {
+        height: 250px;
+    }
 
-            .scroll-to-top::before {
-                font-size: 20px;
-            }
-        }
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section-content {
+        padding: 25px;
+    }
+
+    .items-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .cta-banner {
+        padding: 60px 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* Móviles pequeños (480px o menos) */
+@media (max-width: 480px) {
+    .logo-circle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .hero-image {
+        height: 200px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .section-content {
+        padding: 20px;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr; /* una sola columna en móviles */
+        gap: 25px;
+    }
+
+    .item-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .item-name {
+        font-size: 14px;
+    }
+
+    .cta-banner h2 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .scroll-to-top::before {
+        font-size: 18px;
+    }
+}

@@ -6,12 +6,31 @@
     <link rel="stylesheet" href="CSS/Inicio-estilo.css">
     <title>Inicio - Restaurante</title>
 </head>
+
 <body>
-<!-- Header -->
+    <!-- Header -->
     <header>
+        <!-- Google Translate Element -->
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'es',
+                    includedLanguages: 'en,fr,it,de,pt', // idiomas permitidos
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         <div class="header-content">
             <div class="logo">
-                <div class="logo-circle">Logo</div>
+                <div class="logo-circle">
+                    <img src="IMG/Logo.png" alt="Logo del sitio" class="logo-img">
+                </div>
                 <span class="brand-name">Nombre</span>
             </div>
             <nav>
@@ -30,17 +49,17 @@
     <section class="hero" id="inicio">
         <div class="hero-content">
             <div class="hero-image">
-                <span>Imagen</span>
+                <img src="IMG/Restaurante.png" alt="Banner principal" class="hero-banner">
             </div>
         </div>
     </section>
 
     <!-- Tabs -->
-     <div class="tabs">
+    <div class="tabs">
         <div class="nav-secundario">
-        <a href="#tendencias" ><button class="tab-button active">Tendencias</a></button>
-        <a href="#nuevos-platos"><button class="tab-button">Nuevos Platos</a></button>
-        <a href="#menu-dia"><button class="tab-button">Menú del Día</a></button>
+            <a href="#tendencias"><button class="tab-button active">Tendencias</a></button>
+            <a href="#nuevos-platos"><button class="tab-button">Nuevos Platos</a></button>
+            <a href="#menu-dia"><button class="tab-button">Menú del Día</a></button>
         </div>
     </div>
 
@@ -53,21 +72,32 @@
                 <h2>Tendencias</h2>
                 <div class="items-grid">
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 1</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato1-carne-sudado.jpg" alt="Plato 1">
+                        </div>
+                        <p class="item-name">Sudado de carne</p>
                     </div>
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 2</p>
+                        <div class="item-image">
+                            <img src="IMG/Palto1-sopa-ajiaco-santafereno.jpg" alt="Plato 2">
+                        </div>
+                        <p class="item-name">Ajiaco Santafereño</p>
                     </div>
+
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 3</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato3-Desayuno-calentado-frijoles.jpg" alt="Plato 3">
+                        </div>
+                        <p class="item-name">Calentado con frijoles</p>
                     </div>
+
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 4</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato4-picada-paisa.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Picada Paisa</p>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -78,21 +108,33 @@
                 <h2>Nuevos Platos</h2>
                 <div class="items-grid">
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 1</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato2-Almuerzo-empanadas.jpg" alt="Plato 1">
+                        </div>
+                        <p class="item-name">Empanadas</p>
                     </div>
+
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 2</p>
+                        <div class="item-image">
+                            <img src="IMG/Bebidas3-limonada-coco.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Limonada de coco</p>
                     </div>
+
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 3</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato1-picada-mixta.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">PIcada mixta</p>
                     </div>
+
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 4</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato3-Almuerzo-arroz-pollo.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Arroz con pollo</p>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -102,23 +144,36 @@
             <div class="section-content">
                 <h2>Menú del Día</h2>
                 <div class="items-grid">
+                    
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 1</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato1-Desayuno-calentado-huevo.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Calentado de huevo</p>
                     </div>
+                    
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 2</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato2-carne-bistec.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Carne al bistec</p>
                     </div>
+                    
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 3</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato2-picada-campesina.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Picada campesina</p>
                     </div>
+                    
                     <div class="item-card">
-                        <div class="item-image">Imagen</div>
-                        <p class="item-name">Plato 4</p>
+                        <div class="item-image">
+                            <img src="IMG/Plato3-carne-Costillas-BBQ.jpg" alt="Plato 4">
+                        </div>
+                        <p class="item-name">Costilla BBQ</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -134,4 +189,5 @@
     <script src="JS/Inicio-script.js"></script>
 
 </body>
+
 </html>
